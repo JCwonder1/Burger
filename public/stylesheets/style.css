@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.jumbotron {
+  background-color: skyblue;
+  color: white;
+
+}
+.list-group-item{
+  padding: 10px;
+}
+
+.list-group-item > button.delete,
+.list-group-item > button.devour {
+  /* float: right; */
+  margin-left: 5px;
+}
+ul,li { list-style-type: none;
+        list-style-position:inside;
+        margin:0;
+        padding:0; }
+.eaten{
+  color: blue;
+}
+.created{
+  color: red;
+}

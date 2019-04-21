@@ -1,0 +1,67 @@
+<header class="jumbotron display-3">
+    <div class="row">
+        <div class="col-12 text-center">
+            <i class="fas fa-hamburger display-3"></i>
+            <h1>Burgerfest</h1>
+            <h5>Create and Devour Burgers.  Nom Nom Nom</h5>
+        </div>
+    </div>
+</header>
+
+<div class="container align-left ">
+    <div class="row">
+        <div class="col-4">
+            <h2>Burgers Created</h2>
+            
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h1>Devour Burgers</h1>
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+        <ul>
+            {{#each burger}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devoured=false}}
+            {{/unless}}
+            {{/each}}
+        </ul>
+        <form class="create-form mt-4">
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                    <input type="text" class="form-control mb-2" placeholder="Enter Burger Name" id="name">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-info mb-2">Submit</button>
+                </div>
+            </div>
+        </form>
+
+        </div>
+        <div class="col-4">
+            
+        </div>
+        <div class="col-4">
+            <ul>
+                {{#each burger}}
+                {{#if devoured}}
+                <li class="list-group-item created">{{burger_name}}</li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    
+        
+</div>
+
