@@ -3,11 +3,11 @@ const mysql = require("mysql");
 
 // Set up our connection information
 const connection = mysql.createConnection({
-    host: "localhost",
-    port: 8889,
-    user: "root",
-    password: "ColumbiaBootcamp",
-    database: "burgers_db"
+  host:
+    "mysql://us-cdbr-iron-east-02.cleardb.net/heroku_fb1c1e129c7c715?reconnect=true",
+  user: "rbf78139ac0a4d2",
+  password: "d190eb72",
+  database: "burgers_db"
 });
 
 // Connect to the database
