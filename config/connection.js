@@ -3,11 +3,10 @@ const mysql = require("mysql");
 
 // Set up our connection information
 const connection = mysql.createConnection({
-  host:
-    "mysql://us-cdbr-iron-east-02.cleardb.net/heroku_fb1c1e129c7c715?reconnect=true",
+  host: "us-cdbr-iron-east-02.cleardb.net",
   user: "rbf78139ac0a4d2",
-  password: "d190eb72",
-  database: "burgers_db"
+  password: "7c43fd68f2eb68f",
+  database: "heroku_fb1c1e129c7c715"
 });
 
 // Connect to the database
